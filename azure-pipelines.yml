@@ -27,7 +27,7 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
     preserveTimestamp: true
-  Condition: succeededOrFailed()
+
     
 - task: PublishBuildArtifacts@1
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
